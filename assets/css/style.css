@@ -45,7 +45,9 @@
 
 /* btn classes  */
 .slick-dots {
-    bottom: -22% !important;
+    position:absolute;
+    bottom: 2% !important;
+    left: 0;
 }
 
 .slick-dots li.slick-active button:before {
@@ -61,6 +63,8 @@ slick-dots li {
     margin: 0 20px !important;
 }
 
+.slick-slider {
+    position: static !important;}
 
 .get_started_btn {
     padding: 15px 30px;
@@ -76,12 +80,25 @@ slick-dots li {
 }
 
 .prev {
+    height: 108px;
+    width: 62px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
     top: 43%;
     left: 13%;
 }
 
 .next {
-
+    height: 108px;
+    width: 62px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
     top: 43%;
     right: 17%;
 }
@@ -143,10 +160,7 @@ slick-dots li {
         right: 5%
     }
 
-    .slick-dots {
-        bottom: -7% !important;
-    }
-}
+  
 
 @media (max-width:992px) {
     .flex_column_reverse {
@@ -162,9 +176,7 @@ slick-dots li {
         top: 80%;
     }
 
-    .slick-dots {
-        bottom: -10% !important;
-    }
+   
 
     .next {
 
@@ -195,9 +207,7 @@ slick-dots li {
         display: none;
     }
 
-    .slick-dots {
-        bottom: -10% !important;
-    }
+  
 
     .slick-dots li button:before {
         font-size: 10px !important;
